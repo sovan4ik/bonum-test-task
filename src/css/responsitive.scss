@@ -1,0 +1,845 @@
+@import "for-size.scss"; // $desktop-l-smaller-boundary: 1920px;
+// $laptop-l-smaller-boundary: 1440px;
+// $laptop-s-smaller-boundary: 1366px;
+// $tablet-smaller-boundary: 960px;
+// $phablet-smaller-boundary: 768px - 2px;
+// $mobile-s-smaller-boundary: 360px;
+@include for-size(mobile-s) {
+  header {
+    .hero {
+      &__body {
+        .nav {
+          .action {
+            .burger {
+              margin-right: 30px;
+            }
+
+            .soc {
+              .soc__link + .soc__link {
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include for-size(phablet) {
+  header {
+    .hero {
+      background-position-x: 33px;
+
+      &__overlay {
+        .blur {
+          width: 52%;
+        }
+
+        .right-side {
+          width: 17%;
+        }
+      }
+
+      &__body {
+        .right-copy {
+          right: -35px;
+
+          span {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .nav {
+        max-width: 264px;
+
+        .action {
+          .burger {
+            margin-right: 61px;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    padding-left: 39px;
+    padding-right: 39px;
+    max-width: calc(1410px - 39px - 39px);
+  }
+
+  .target {
+    margin-top: 100px;
+
+    p {
+      max-width: 270px;
+      padding: 40px 0 58px;
+      margin-left: auto;
+    }
+
+    h4 {
+      margin-left: 52%;
+    }
+
+    .text-vertical {
+      &--left {
+        position: absolute;
+        top: 48px;
+      }
+    }
+
+    .filter {
+      margin-bottom: 50px;
+
+      &::before {
+        height: 240px;
+      }
+
+      &__image {
+        margin-top: -74px;
+        max-width: 280px;
+        max-height: 380px;
+      }
+
+      &__title {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &__right {
+        padding-top: 50px;
+        padding-left: 100px;
+        padding-right: 0;
+      }
+
+      &__header {
+        margin-bottom: 26px;
+      }
+
+      &__list {
+        margin-left: 74px;
+        margin-top: -60px;
+      }
+
+      &__clear {
+        margin-top: 110px;
+
+        &::after {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .product {
+    h2 {
+      margin-left: 52%;
+    }
+
+    &__options {
+      margin-left: 60px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__card {
+      padding-top: 55px;
+      max-width: 100%;
+    }
+
+    .card {
+      &__item {
+        margin-top: 15px;
+        margin-right: 80px;
+
+        .photo {
+          min-width: 171px;
+          min-height: 257px;
+        }
+
+        .text {
+          position: absolute;
+          top: 15px;
+          right: 0;
+        }
+      }
+
+      .vertical-text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .colors {
+    padding-top: 100px;
+
+    p {
+      max-width: 270px;
+      margin-left: auto;
+      padding: 50px 0;
+    }
+
+    h4 {
+      margin-left: 52%;
+    }
+
+    h2 {
+      max-width: 270px;
+    }
+
+    .text-vertical {
+      &--left {
+        position: absolute;
+        left: 35px;
+        top: 183px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+      }
+    }
+
+    .project-colors {
+      .text-horizontal {
+        right: 23px;
+      }
+
+      &__grid {
+        flex-direction: row;
+      }
+
+      .color--0 {
+        width: 190px;
+        margin-left: calc(100% - 190px - 20px);
+
+        &::before {
+          margin: -62px -39px 0 0;
+        }
+      }
+
+      &__left {
+        order: 1;
+        margin-bottom: 0;
+        margin-left: 40px;
+        justify-content: flex-end;
+
+        .color--1 {
+          order: 2;
+          margin-top: 30px;
+          margin-left: 0;
+        }
+
+        .color--2 {
+          order: 1;
+          margin-left: 0;
+          margin-right: calc(100% - 70px);
+        }
+
+        .color--3 {
+          order: 3;
+          margin-left: 30px;
+          margin-right: 60px;
+        }
+      }
+
+      &__right {
+        margin-top: 108px;
+      }
+    }
+  }
+}
+@include for-size(tablet) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  header {
+    .hero {
+      background-position-x: 33px;
+
+      &__overlay {
+        .blur {
+          width: 48.5%;
+        }
+
+        .right-side {
+          width: 23.5%;
+        }
+      }
+
+      &__body {
+        min-height: calc(530px - 30px - 30px);
+
+        .name {
+          .rotated {
+            font-size: 14px;
+          }
+        }
+
+        .right-copy {
+          right: 22px;
+        }
+      }
+    }
+  }
+
+  .container {
+    padding-left: 95px;
+    padding-right: 95px;
+    max-width: calc(1410px - 95px - 95px);
+  }
+
+  .target {
+    margin-top: 130px;
+
+    p {
+      font-size: 13px;
+      max-width: 290px;
+      padding: 60px 0 28px;
+    }
+
+    .text-vertical {
+      &--left {
+        position: absolute;
+        top: 48px;
+      }
+    }
+
+    .filter {
+      margin-bottom: 95px;
+
+      &::before {
+        height: 243px;
+      }
+
+      &__image {
+        margin-top: -96px;
+        margin-left: 48px;
+        max-width: 322px;
+        max-height: 434px;
+      }
+
+      &__right {
+        padding-top: 96px;
+        padding-bottom: 0;
+      }
+
+      &__clear {
+        margin-top: 88px;
+      }
+
+      &__list {
+        margin-left: 84px;
+        margin-top: -60px;
+      }
+
+      &__counter {
+        margin-top: -144px;
+      }
+    }
+  }
+
+  .product {
+    h2 {
+      margin-left: 52%;
+    }
+
+    &__options {
+      margin-left: 80px;
+    }
+
+    &__card {
+      padding-top: 65px;
+    }
+
+    .card {
+      &__item {
+        margin-top: 15px;
+        margin-right: 100px;
+
+        .photo {
+          margin-top: 0;
+        }
+
+        .text {
+          top: 0;
+        }
+      }
+
+      .vertical-text {
+        right: -49px;
+      }
+    }
+  }
+
+  .colors {
+    h2 {
+      padding-left: 50px;
+    }
+
+    p {
+      max-width: 290px;
+    }
+
+    .text-vertical {
+      &--left {
+        left: 90px;
+      }
+    }
+
+    .text-horizontal {
+      text-align: left;
+      margin-left: 23%;
+    }
+
+    .project-colors {
+      .text-horizontal {
+        right: 79px;
+      }
+
+      .color {
+        width: 90px;
+      }
+
+      .color--0 {
+        width: 210px;
+        margin-left: calc(100% - 210px - 0px);
+
+        &::before {
+          margin: -62px -20px 0 0;
+        }
+      }
+
+      &__left {
+        .color--2 {
+          margin-right: calc(100% - 90px);
+        }
+
+        .color--3 {
+          margin-right: 40px;
+        }
+      }
+
+      &__right {
+        .color--1 {
+          margin-right: calc(100% - 80px - 50px);
+          margin-left: 50px;
+          width: 80px;
+        }
+
+        .color--2 {
+          width: 80px;
+          margin-left: calc(80px + 30px + 50px);
+        }
+      }
+    }
+  }
+}
+@include for-size(laptop-s) {
+  h1 {
+    font-size: 72px;
+  }
+
+  h2 {
+    font-size: 56px;
+    line-height: 70px;
+  }
+
+  header {
+    .hero {
+      background-position-x: 10px;
+
+      &__overlay {
+        .blur {
+          width: 50.6%;
+        }
+
+        .right-side {
+          width: 19.6%;
+        }
+      }
+
+      &__body {
+        padding-bottom: 60px;
+        min-height: calc(810px - 30px - 60px);
+
+        .right-copy {
+          right: 27px;
+        }
+      }
+
+      .nav {
+        max-width: 424px;
+      }
+    }
+  }
+
+  .container {
+    padding-left: 98px;
+    padding-right: 98px;
+    max-width: calc(1410px - 98px - 98px);
+  }
+
+  .target {
+    margin-top: 150px;
+
+    p {
+      font-size: 14px;
+      max-width: 375px;
+      padding: 50px 0 115px;
+    }
+
+    .text-vertical {
+      &--left {
+        position: absolute;
+        top: 48px;
+      }
+    }
+
+    .filter {
+      &::before {
+        height: 330px;
+      }
+
+      &__image {
+        margin-top: -202px;
+        margin-left: 60px;
+        max-width: 520px;
+        max-height: 720px;
+      }
+
+      &__right {
+        padding-top: 112px;
+        padding-bottom: 0;
+      }
+
+      &__clear {
+        margin-top: 160px;
+      }
+
+      &__list {
+        margin-left: 84px;
+        margin-top: -60px;
+      }
+
+      &__counter {
+        margin-top: -144px;
+      }
+    }
+  }
+
+  .product {
+    h2 {
+      margin-left: 52%;
+      max-width: 470px;
+    }
+
+    &__options {
+      margin-left: 100px;
+    }
+
+    &__image {
+      max-width: 570px;
+      max-height: 700px;
+    }
+
+    &__card {
+      padding-top: 61px;
+    }
+
+    .card {
+      &__item {
+        margin-top: 15px;
+        margin-right: 170px;
+
+        .name {
+          font-size: 14px;
+          line-height: 18px;
+          max-width: 277px;
+        }
+
+        .photo {
+          min-width: 280px;
+          min-height: 400px;
+        }
+
+        .text {
+          top: 30px;
+        }
+      }
+
+      .vertical-text {
+        right: -49px;
+      }
+    }
+  }
+
+  .colors {
+    padding-top: 150px;
+
+    h2 {
+      max-width: 434px;
+      padding-left: 50px;
+    }
+
+    p {
+      max-width: 316px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 132.4%;
+    }
+
+    .text-vertical {
+      &--left {
+        left: 94px;
+      }
+    }
+
+    .text-horizontal {
+      font-size: 16px;
+      margin-left: 26%;
+    }
+
+    .project-colors {
+      .text-horizontal {
+        right: 82px;
+      }
+
+      .color {
+        width: 130px;
+        height: 60px;
+      }
+
+      .color--0 {
+        width: 280px;
+        margin-left: calc(100% - 280px);
+      }
+
+      &__left {
+        .color--2 {
+          margin-right: calc(100% - 130px);
+        }
+
+        .color--3 {
+          margin-right: 121px;
+        }
+      }
+
+      &__right {
+        .color--1 {
+          margin-right: calc(100% - 130px - 50px);
+          margin-left: 50px;
+          width: 130px;
+        }
+
+        .color--2 {
+          width: 130px;
+          margin-left: calc(130px + 30px + 50px);
+        }
+      }
+    }
+  }
+}
+@include for-size(laptop-l) {
+  header {
+    .hero {
+      background-position-x: 88px;
+
+      &__overlay {
+        .blur {
+          width: 51%;
+        }
+
+        .right-side {
+          width: 21.2%;
+        }
+      }
+
+      &__body {
+        padding-bottom: 60px;
+        min-height: calc(810px - 30px - 60px);
+
+        .right-copy {
+          right: 63px;
+        }
+      }
+
+      .nav {
+        max-width: 424px;
+      }
+    }
+  }
+
+  .container {
+    padding-left: 135px;
+    padding-right: 135px;
+    max-width: calc(1410px - 135px - 135px);
+  }
+}
+@include for-size(desktop-l) {
+  h4 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  header {
+    .hero {
+      background-position-x: 88px;
+
+      &__overlay {
+        .blur {
+          width: 44.5%;
+        }
+
+        .right-side {
+          width: 24.2%;
+        }
+      }
+
+      &__body {
+        padding-bottom: 60px;
+        min-height: calc(1055px - 30px - 60px);
+
+        .right-copy {
+          right: -72px;
+        }
+      }
+
+      .nav {
+        max-width: 504px;
+      }
+    }
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1410px;
+  }
+
+  .target {
+    margin-top: 150px;
+
+    p {
+      padding: 50px 0 160px;
+      margin-right: 175px;
+    }
+
+    .text-vertical {
+      &--left {
+        position: absolute;
+        top: 48px;
+      }
+    }
+
+    .filter {
+      &::before {
+        width: 250%;
+        left: -50%;
+        height: 330px;
+      }
+
+      &__image {
+        margin-top: -202px;
+        margin-left: 60px;
+        min-width: 640px;
+        max-height: 890px;
+      }
+
+      &__right {
+        padding-top: 120px;
+        padding-left: 200px;
+      }
+
+      &__clear {
+        margin-top: 160px;
+      }
+
+      &__list {
+        margin-left: 84px;
+        margin-top: -60px;
+      }
+
+      &__counter {
+        margin-top: -190px;
+      }
+      margin-bottom: 100px;
+    }
+  }
+
+  .product {
+    h2 {
+      margin-left: 52%;
+      max-width: 470px;
+    }
+
+    &__options {
+      margin-left: 200px;
+    }
+
+    &__image {
+      max-width: 690px;
+      max-height: 850px;
+    }
+
+    .card {
+      &__item {
+        margin-top: 15px;
+        margin-right: 220px;
+
+        .name {
+          font-size: 14px;
+          line-height: 18px;
+          max-width: 277px;
+        }
+
+        .photo {
+          min-width: 280px;
+          min-height: 400px;
+        }
+
+        .text {
+          top: 0;
+        }
+      }
+
+      .vertical-text {
+        right: -49px;
+      }
+    }
+  }
+
+  .colors {
+    p {
+      margin-right: 175px;
+    }
+
+    .text-vertical {
+      &--left {
+        left: -6px;
+      }
+    }
+
+    .text-horizontal {
+      margin-left: 20%;
+    }
+
+    .project-colors {
+      .text-horizontal {
+        right: -16px;
+      }
+    }
+  }
+}
